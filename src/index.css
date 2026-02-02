@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased text-gray-900;
+  }
+
+  ::selection {
+    @apply bg-teal-200 text-teal-900;
+  }
+}
+
+@layer components {
+  .prose h2 {
+    @apply scroll-mt-24;
+  }
+
+  .prose h3 {
+    @apply scroll-mt-24;
+  }
+
+  .prose a {
+    @apply text-teal-600 hover:text-teal-700 transition-colors;
+  }
+
+  .prose table {
+    @apply w-full;
+  }
+
+  .prose td, .prose th {
+    @apply border-gray-200;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
